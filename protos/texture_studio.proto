@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "google/api/annotations.proto";
+
+package texture_studio;
+option go_package = "protos;protos";
+
+service TextureStudioService {
+    // Upload project to texture studio.
+    rpc UploadProject(UploadProjectRequest) returns (UploadProjectResponse) {
+        option (google.api.http) = {
+            post: "/v1/projects"
+            body: "*"
+        };
+    }
+}
+
+// Request message for rpc `UploadProject`.
+message UploadProjectRequest {
+
+}
+// Response message for rpc `UploadProject`.
+message UploadProjectResponse {
+
+}
