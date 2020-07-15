@@ -1,8 +1,10 @@
 # API for Texture Studio
 
+API for managing Texture Studio server.
+
 ## Installation
 
-First, you need to install ProtocolBuffers 3.0.0-beta-3 or later.
+You need to install ProtocolBuffers 3.0.0-beta-3 or later.
 ```shell script
 mkdir tmp
 cd tmp
@@ -15,5 +17,9 @@ make check
 sudo make install
 ```
 
-
+## Build
+```shell script
+go generate
+go build
+```
 
